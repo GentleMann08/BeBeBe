@@ -13,7 +13,7 @@ import asyncio
 import logging                                  
 from settings import Settings                   
 import logging                                  
-# from handlers import routers_list
+from handlers import routers_list
 # from handlers.commands_handlers import start_handler
 
 async def main():
@@ -24,7 +24,7 @@ async def main():
     bot = Bot(token=telegram_token)
     dp = Dispatcher()
 
-    # dp.include_routers(*routers_list)
+    dp.include_routers(*routers_list)
 
     print("Starting server")
     await dp.start_polling(bot)
