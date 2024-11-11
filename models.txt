@@ -1,0 +1,6 @@
+EleutherAI/gpt-neo-2.7B
+gpt2-medium
+gpt2-large
+gpt2-xl
+gpt2
+distilgpt2
