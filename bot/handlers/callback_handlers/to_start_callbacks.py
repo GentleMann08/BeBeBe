@@ -15,7 +15,7 @@ async def handle_bleu_check(callback_query: CallbackQuery, state: FSMContext):
 
     keyboard = await Menu.start()
     new_message = await callback_query.message.answer(
-        text="Добро пожаловать в BeBeBeAI!",
+        text="Welcome to BeBeBeAI!",
         reply_markup=keyboard
     )
 

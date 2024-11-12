@@ -13,7 +13,7 @@ async def start_handler(message: Message, bot: Bot, state: FSMContext):
     keyboard = await Menu.start()
     last_messafe = await bot.send_message(
         chat_id=chat, 
-        text="Добро пожаловать в BeBeBeAI!",
+        text="Welcome to BeBeBeAI!",
         reply_markup=keyboard
         )
     

@@ -1,14 +1,11 @@
 from aiogram import Bot                         
-from aiogram import Dispatcher     
-from aiogram import F                                                                                    
-# from handlers.commands_handlers import command_routers
+from aiogram import Dispatcher                                                                                    
 
 import asyncio                                  
 import logging                                  
 from settings import Settings                   
 import logging                                  
 from handlers import routers_list
-# from handlers.commands_handlers import start_handler
 
 async def main():
     logging.basicConfig(level=logging.INFO)                    

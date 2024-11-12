@@ -15,7 +15,7 @@ async def handle_bleu_check(callback_query: CallbackQuery, state: FSMContext):
 
     keyboard = await Menu.to_start()
     last_messafe = await callback_query.message.answer(
-        text="Функция в разработке",
+        text="Feature under development",
         reply_markup=keyboard
         )
     

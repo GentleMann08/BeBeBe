@@ -23,10 +23,10 @@ class Menu:
     @staticmethod
     async def models():
         models = {
-            "gpt-neo-125M": "EleutherAI/gpt-neo-125M",
-            "distilgpt2": "distilgpt2",
-            "gpt2": "gpt2",
-            "gpt2-medium": "gpt2-medium"
+            "gpt-neo-125M": "EleutherAI/gpt-neo-125M_model",
+            "distilgpt2": "distilgpt2_model",
+            "gpt2": "gpt2_model",
+            "gpt2-medium": "gpt2-medium_model"
         }
         buttons_dict = models | {"Menu": "to_start"}
         
