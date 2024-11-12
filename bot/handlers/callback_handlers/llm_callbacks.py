@@ -3,6 +3,7 @@ from aiogram.fsm.context import FSMContext
 from aiogram.types import CallbackQuery
 from keyboards.menu import Menu
 from ..states import LLM_Generation
+from ai.scripts import LLM_bot
 
 llm_callback_router = Router()
 
@@ -42,4 +43,5 @@ async def models_state(callback_query: CallbackQuery, state: FSMContext):
     await callback_query.answer(model)
 
     await state.update_data(model=model)
+    await state.update_data(LLM_model = LLM_bot(model_name = model))
     await state.update_data(last_message_id=new_message.message_id)
