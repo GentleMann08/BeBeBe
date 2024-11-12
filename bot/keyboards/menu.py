@@ -1,14 +1,13 @@
 from aiogram.utils.keyboard import InlineKeyboardMarkup, InlineKeyboardButton, InlineKeyboardBuilder
 from .operations.keyboard_operations import KeyboardOperations
 
-class Menu(KeyboardOperations):
-
-    async def start(self):
+class Menu:
+    @staticmethod
+    async def start():
         buttons_dict = {
-            "Проверить модель на BLEU": "bleu",
-            "Пообщаться с моделью LLM": "llm"
+            "BLEU-metric": "bleu",
+            "LLM-generation": "llm"
         }
-
-        keyboard = await self.create_base_keyboard(buttons=buttons_dict)
-
+        
+        keyboard = await KeyboardOperations.create_base_keyboard(buttons=buttons_dict)
         return keyboard
