@@ -1,5 +1,9 @@
-from .menu_callbacks import menu_router
+from .bleu_callbacks import bleu_router
+from .to_start import to_start_router
+from .llm_callbacks import llm_router
 
 callbacks_routers = [
-    menu_router,
+    bleu_router,
+    to_start_router,
+    llm_router
 ]

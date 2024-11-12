@@ -1,12 +1,6 @@
 from aiogram import Bot                         
-from aiogram import Dispatcher
-from aiogram.filters import Command             
-from aiogram.filters import CommandStart        
-from aiogram import F                                              
-import aiogram.exceptions                                   
-from aiogram.types import CallbackQuery        
-from aiogram.types import Message               
-from aiogram.types import FSInputFile           
+from aiogram import Dispatcher     
+from aiogram import F                                                                                    
 # from handlers.commands_handlers import command_routers
 
 import asyncio                                  
