@@ -3,9 +3,9 @@ from aiogram.fsm.context import FSMContext
 from aiogram.types import CallbackQuery
 from keyboards.menu import Menu
 
-to_start_router = Router()
+system_router = Router()
 
-@to_start_router.callback_query(F.data == 'to_start')
+@system_router.callback_query(F.data == 'to_start')
 async def handle_bleu_check(callback_query: CallbackQuery, state: FSMContext):
     data = await state.get_data()
     last_message_id = data.get("last_message_id")
